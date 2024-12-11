@@ -36,6 +36,7 @@ body {
   color: #20201e; 
 }
 
+/* Ajustes específicos para el carrusel */
 .hero-carousel {
   width: 100%;
   height: 100vh;
@@ -47,9 +48,43 @@ body {
 
 .carousel-inner img {
   width: 100%;
-  height: 100vh;
+  height: auto; /* Cambiado a auto para mantener proporciones en móviles */
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-carousel {
+    height: 50vh; /* Reducir la altura del carrusel en pantallas pequeñas */
+  }
+
+  .carousel-inner img {
+    height: 50vh; /* Asegura que las imágenes no se distorsionen */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px; /* Reduce el tamaño de los controles en móviles */
+    background-color: rgba(0, 0, 0, 0.5); /* Mejora la visibilidad de los controles */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-carousel {
+    height: 40vh; /* Más pequeño en pantallas muy pequeñas */
+  }
+
+  .carousel-inner img {
+    height: 40vh;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 
 .categoria-section {
   padding: 50px 20px;
