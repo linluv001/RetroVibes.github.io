@@ -214,42 +214,10 @@ footer {
   .product-box {
     width: 45%;
   }
-
-  .mission-vision {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mission-vision div {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-
-  .footer-container {
-    justify-content: center;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .product-box {
     width: 100%;
-  }
-
-  .mission-vision div {
-    width: 90%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .footer-bottom {
-    font-size: 12px;
   }
 }
