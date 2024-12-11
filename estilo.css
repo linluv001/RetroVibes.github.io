@@ -7,30 +7,18 @@ body {
   text-align: center;
 }
 
-.navbar {
-.navbar {
+.nav-links {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  background-color: #892C47;
-  padding: 10px 0;
-}
-@@ -21,6 +22,10 @@
-  margin: 0;
 }
 
-.navbar-collapse {
-  justify-content: center; /* Para centrar el contenido cuando el menú colapsa */
-}
 .nav-links li {
-  margin: 0 20px;
-}
-@@ -33,217 +38,226 @@
+  margin: 0 15px;
 }
 
-.nav-links a:hover {
-  color: #20201e; 
-  color: #20201e;
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Ajustes específicos para el carrusel */
