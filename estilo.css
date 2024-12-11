@@ -8,43 +8,52 @@ body {
 }
 
 .navbar {
+.navbar {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   background-color: #892C47;
   padding: 10px 0;
 }
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  padding: 0;
+@@ -21,6 +22,10 @@
   margin: 0;
 }
 
+.navbar-collapse {
+  justify-content: center; /* Para centrar el contenido cuando el menú colapsa */
+}
 .nav-links li {
   margin: 0 20px;
 }
-
-.nav-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  transition: color 0.3s ease;
+@@ -33,217 +38,226 @@
 }
 
 .nav-links a:hover {
   color: #20201e; 
+  color: #20201e;
 }
 
 /* Ajustes específicos para el carrusel */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar {
+    padding: 10px;
+  }
+}
 .hero-carousel {
   width: 100%;
   height: 100vh;
-@@ -47,168 +48,202 @@
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
 .carousel-inner img {
   width: 100%;
-  height: 100vh;
   height: auto; /* Cambiado a auto para mantener proporciones en móviles */
   object-fit: cover;
 }
@@ -53,9 +62,11 @@ body {
   .hero-carousel {
     height: 50vh; /* Reducir la altura del carrusel en pantallas pequeñas */
   }
+
   .carousel-inner img {
     height: 50vh; /* Asegura que las imágenes no se distorsionen */
   }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 30px;
@@ -63,19 +74,24 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Mejora la visibilidad de los controles */
   }
 }
+
 @media screen and (max-width: 480px) {
   .hero-carousel {
     height: 40vh; /* Más pequeño en pantallas muy pequeñas */
   }
+
   .carousel-inner img {
     height: 40vh;
   }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 25px;
     height: 25px;
   }
 }
+
+
 .categoria-section {
   padding: 50px 20px;
   text-align: center;
