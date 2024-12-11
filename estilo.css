@@ -6,6 +6,7 @@ body {
   font-style: normal;
   text-align: center;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -34,17 +35,16 @@ body {
 .nav-links a:hover {
   color: #20201e; 
 }
+
+/* Ajustes específicos para el carrusel */
 .hero-carousel {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+@@ -47,168 +48,202 @@
 
 .carousel-inner img {
   width: 100%;
+  height: 100vh;
   height: auto; /* Cambiado a auto para mantener proporciones en móviles */
   object-fit: cover;
 }
@@ -53,11 +53,9 @@ body {
   .hero-carousel {
     height: 50vh; /* Reducir la altura del carrusel en pantallas pequeñas */
   }
-
   .carousel-inner img {
     height: 50vh; /* Asegura que las imágenes no se distorsionen */
   }
-
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 30px;
@@ -65,24 +63,19 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Mejora la visibilidad de los controles */
   }
 }
-
 @media screen and (max-width: 480px) {
   .hero-carousel {
     height: 40vh; /* Más pequeño en pantallas muy pequeñas */
   }
-
   .carousel-inner img {
     height: 40vh;
   }
-
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 25px;
     height: 25px;
   }
 }
-
-
 .categoria-section {
   padding: 50px 20px;
   text-align: center;
