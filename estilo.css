@@ -6,20 +6,35 @@ body {
   font-style: normal;
   text-align: center;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #892C47;
+  padding: 10px 0;
+}
 
 .nav-links {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
+
+.nav-links a:hover {
+  color: #20201e; 
+}
+
 
 /* Ajustes específicos para el carrusel */
 @media (max-width: 768px) {
