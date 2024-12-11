@@ -6,11 +6,9 @@ body {
   font-style: normal;
   text-align: center;
 }
-
-.navbar {
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #892C47;
   padding: 10px 0;
 }
@@ -20,10 +18,6 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.navbar-collapse {
-  justify-content: center; /* Para centrar el contenido cuando el menú colapsa */
 }
 
 .nav-links li {
@@ -38,18 +32,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #20201e;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navbar {
-    padding: 10px;
-  }
+  color: #20201e; 
 }
 .hero-carousel {
   width: 100%;
